@@ -11,3 +11,5 @@ for file in os.listdir(directory):
         answer = str(input())
         if answer is "y":
             os.remove(file)
+			
+#delete this
