@@ -17,6 +17,7 @@ def download(new_url, name):
 		
 
 root = Tk()
+root.title("NLSS Downloader")
 twitch = requests.get("https://api.twitch.tv/kraken/channels/northernlion/videos?limit=5&broadcasts=true", headers={'Client-ID': 'jfyy89kdt4zdf64dzmg3zmvt91j6uca', 'Authorization': 'OAuth n3qqe95xrq5b17hopk73jxj91ahy8o' ,'Accept': 'application/vnd.twitchtv.v3+json'})
 api = twitch.json()
 
